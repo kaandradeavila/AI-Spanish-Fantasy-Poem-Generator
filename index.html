@@ -4,34 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Vollkorn&display=swap" rel="stylesheet">
   <title>AI Spanish Fantasy Poem Generator</title>
 </head>
 <body>
-  <header>
-    <h1>Welcome to the AI Spanish Fantasy Poem Generator</h1>
-  </header>
-  <main>
-    <form action="submit">
-      <input
-        type="text" 
-        placeholder="Enter a topic for your poem..."
-        autofocus
-        required
-        autocomplete="off"
-      />
-      <input type="submit"/>
-      <div class="poem">
-        Nunca te diré, amor mío,
-        <br/>
-        Por qué corre lento el río
+  <div class="container">
+    <header>
+      <h1>AI Spanish Fantasy Poem Generator</h1>
+    </header>
+    <main>
+      <form action="submit">
+        <input
+          type="text" 
+          placeholder="Enter a topic for your poem..."
+          autofocus
+          required
+          autocomplete="off"
+          class="topic-input"
+        />
+        <input type="submit" value="Generate" class="submit-button"/>
+      </form>
+      <div class="poem-container">
+        <div class="quote">"</div>
+        <div class="poem">
+          Nunca te diré, amor mío,
+          <br/>
+          Por qué corre lento el río.
+        </div>
       </div>
-    </form>
-  </main>
-  <footer>Coded with ❤️ by 
-    <a href="https://github.com/kaandradeavila" target="_blank">Kyrenia Ailen Andrade Avila</a>, open-sourced in 
-    <a href="https://github.com/kaandradeavila/AI-Spanish-Fantasy-Poem-Generator" target="_blank">GitHub</a>, and hosted in 
-    <a href="https://ai-spanish-fantasy-poem-generator.netlify.app" target="_blank">Netlify</a>.
-  </footer>
+    </main>
+    <footer>Coded with ❤️ by 
+      <a href="https://github.com/kaandradeavila" target="_blank">Kyrenia Ailen Andrade Avila</a>, open-sourced in 
+      <a href="https://github.com/kaandradeavila/AI-Spanish-Fantasy-Poem-Generator" target="_blank">GitHub</a>, and hosted in 
+      <a href="https://ai-spanish-fantasy-poem-generator.netlify.app" target="_blank">Netlify</a>.
+    </footer>
+  </div>
   <script src="src/index.js"></script>
 </body>
 </html>
