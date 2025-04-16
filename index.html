@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Vollkorn&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <title>AI Spanish Fantasy Poem Generator</title>
 </head>
 <body>
@@ -13,24 +14,20 @@
       <h1>AI Spanish Fantasy Poem Generator</h1>
     </header>
     <main>
-      <form action="submit">
+      <form action="submit" id="poem-generator-form">
         <input
           type="text" 
-          placeholder="Enter a topic for your poem..."
+          placeholder="Enter a theme for your poem..."
           autofocus
           required
           autocomplete="off"
-          class="topic-input"
+          class="theme-input"
         />
         <input type="submit" value="Generate" class="submit-button"/>
       </form>
       <div class="poem-container">
         <div class="quote">"</div>
-        <div class="poem">
-          Nunca te diré, amor mío,
-          <br/>
-          Por qué corre lento el río.
-        </div>
+        <div class="poem" id="poem">Waiting for theme input...</div>
       </div>
     </main>
     <footer>Coded with ❤️ by 

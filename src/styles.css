@@ -6,6 +6,7 @@ body{
 
 .container{
   max-width: 600px;
+  margin: 0 auto;
 }
 
 h1{
@@ -26,7 +27,7 @@ form{
   box-shadow: 0 8px 20px rgba(87, 75, 144, 0.15);
 }
 
-.topic-input{
+.theme-input{
   padding: 16px;
   font-size: 16px;
   border: 2px solid #6C8E2F;
@@ -44,6 +45,7 @@ form{
   border-radius: 50px;
   background-color: #88B04B;
   color: #FFFDF8;
+  cursor: pointer;
 }
 
 .submit-button:hover{
