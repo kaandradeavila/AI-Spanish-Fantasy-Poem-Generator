@@ -4,8 +4,8 @@ function generatePoem(response){
   new Typewriter('#poem', {
     strings: response.data.answer,
     autoStart: true,
-    delay: 20,
-    cursor: ""
+    delay: 25,
+    cursor: "🖋️"
   });
 }
 
