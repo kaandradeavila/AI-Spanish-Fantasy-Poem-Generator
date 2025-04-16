@@ -15,21 +15,24 @@
       <h1>AI Spanish Fantasy Poem Generator</h1>
     </header>
     <main>
-      <form action="submit" id="poem-generator-form">
-        <input
-          type="text" 
-          placeholder="Enter a theme for your poem..."
-          autofocus
-          required
-          autocomplete="off"
-          class="theme-input"
-          id="theme-input"
-        />
-        <input type="submit" value="Generate" class="submit-button"/>
-      </form>
-      <div class="poem-container">
+      <div class="form-container">
+        <form action="submit" id="poem-generator-form">
+          <input
+            type="text" 
+            placeholder="Enter a theme for your poem..."
+            autofocus
+            required
+            autocomplete="off"
+            class="theme-input"
+            id="theme-input"
+          />
+          <input type="submit" value="Generate" class="submit-button"/>
+        </form>
+        <div class="input-example">I.e. Tabby cat, moon beam, or dog sleeping</div>
+      </div>
+      <div class="poem-container hidden" id="poem-container">
         <div class="quote">"</div>
-        <div class="poem" id="poem">Waiting for theme input...</div>
+        <div class="poem" id="poem"></div>
       </div>
     </main>
     <footer>Coded with ❤️ by 
